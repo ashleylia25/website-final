@@ -1,88 +1,88 @@
 :root {
-    --primary-color: #3B82F6;
-    --dark-text: #1F2937;
-    --light-bg: #F9FAFB;
-    --white: #FFFFFF;
-    --font-main: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --font-size-base: 16px;
+  --primary-color: #3B82F6;
+  --dark-text: #1F2937;
+  --light-bg: #F9FAFB;
+  --white: #FFFFFF;
+  --font-main: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
 
-    --spacing-xs: 8px;
-    --spacing-sm: 16px;
-    --spacing-md: 24px;
-    --spacing-lg: 32px;
-    --spacing-xl: 48px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-main);
-    color: var(--dark-text);
-    background-color: var(--light-bg);
-    line-height: 1.6;
+  font-family: var(--font-main);
+  color: var(--dark-text);
+  background-color: var(--light-bg);
+  line-height: 1.6;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }
 
 .header {
-    background-color: var(--white);
-    padding: var(--spacing-md) 0;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+  background-color: var(--white);
+  padding: var(--spacing-md) 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--dark-text);
-    text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-text);
+  text-decoration: none;
 }
 
 .nav {
-    display: flex;
-    gap: var(--spacing-lg);
+  display: flex;
+  gap: var(--spacing-lg);
 }
 
 .nav-link {
-    text-decoration: none;
-    color: var(--dark-text);
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: var(--dark-text);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .nav-link.active {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: var(--primary-color);
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--primary-color);
 }
 
 .hero {
@@ -101,7 +101,7 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 56px;         
+  font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-lg);
@@ -109,12 +109,12 @@ body {
 }
 
 .hero-text h1 .highlight {
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .hero-text p {
   font-size: 18px;
-  color: #6B7280;           
+  color: #6B7280;
   margin-bottom: var(--spacing-lg);
   max-width: 400px;
 }
@@ -156,4 +156,345 @@ body {
 .image-mask image {
   width: 100%;
   height: 100%;
+}
+
+.skills {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--light-bg);
+}
+
+/* Nadpisy sekcí */
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--dark-text);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+
+  /* Gradient text */
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-text));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #6B7280;
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  font-weight: 500;
+}
+
+/* Grid layout pro desktop */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 sloupce vedle sebe */
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Kartička */
+.skill-card {
+  background-color: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Hover efekt na kartičku */
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Ikona */
+.skill-icon {
+  font-size: 48px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: var(--spacing-md);
+
+  /* Flexbox pro centrování emoji */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #EEF2FF;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Hover efekt na ikonu */
+.skill-card:hover .skill-icon {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Texty */
+.skill-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: var(--spacing-sm);
+  transition: color 0.3s ease;
+}
+
+.skill-card:hover .skill-title {
+  color: var(--primary-color);
+}
+
+.skill-description {
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+}
+
+/* Mobil (menší než 768px) -> 1 sloupec */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    /* Pod sebou */
+    gap: var(--spacing-md);
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .skill-card {
+    padding: var(--spacing-md);
+  }
+
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+  }
+}
+
+.skill-card {
+  border-left: 4px solid var(--primary-color);
+  /* Modrý pruh vlevo */
+}
+
+.skill-card:nth-child(2) {
+  border-left-color: #10B981;
+  /* Zelená */
+}
+
+.skill-card:nth-child(3) {
+  border-left-color: #F59E0B;
+  /* Oranžová */
+}
+
+.skill-card:nth-child(4) {
+  border-left-color: #EF4444;
+  /* Červená */
+}
+
+.skill-card:nth-child(5) {
+  border-left-color: #8B5CF6;
+  /* Fialová */
+}
+
+.skill-card:nth-child(6) {
+  border-left-color: #EC4899;
+  /* Růžová */
+}
+
+.skill-icon {
+  font-size: 48px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto var(--spacing-md) auto;
+
+  /* Gradient background */
+  background: linear-gradient(135deg, var(--primary-color) 0%, #60A5FA 100%);
+  color: var(--white);
+
+  /* Transition */
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+}
+
+.skill-card:hover .skill-icon {
+  transform: rotate(360deg) scale(1.2);
+  /* Úplná rotace + zvětšení */
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.5);
+}
+
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.nav-link:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+section.current {
+  animation: sectionEnter 0.6s ease;
+}
+
+@keyframes sectionEnter {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.8s ease-out forwards;
+}
+
+.animate-stagger-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-stagger-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-stagger-3 {
+  animation-delay: 0.3s;
+}
+
+.animate-stagger-4 {
+  animation-delay: 0.4s;
+}
+
+.animate-stagger-5 {
+  animation-delay: 0.5s;
+}
+
+.animate-stagger-6 {
+  animation-delay: 0.6s;
+}
+
+.skill-card {
+  opacity: 0;
+  /* Začneme neviditelné */
+}
+
+.skill-card.animate-fade-in-up {
+  opacity: 1;
+  /* Jakmile se přidá class, stane se viditelné */
 }
