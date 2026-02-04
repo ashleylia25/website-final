@@ -104,7 +104,150 @@
             </div>
         </div>
     </section>
+    <section class="portfolio" id="works">
+        <div class="container">
+            <h2 class="section-title">Moje Projekty</h2>
+            <p class="section-subtitle">Ukázka mých nejlepších prací</p>
+
+            <!-- Filtrovací tlačítka -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Vše</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">Aplikace</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+
+            <p class="portfolio-count">Zobrazeno <span id="project-count">6</span> projektů</p>
+            <div class="portfolio-grid">
+
+                <!-- Projekt 1 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="./images/project1.jpg" alt="E-commerce Web" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Figlet fetch</h3>
+                            <p class="portfolio-description">Moje verze neofetche.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Demo
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 2 -->
+                <div class="portfolio-card" data-category="app">
+                    <div class="portfolio-image">
+                        <img src="./images/project2.jpg" alt="Weather App" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Dashboard aplikace</h3>
+                            <p class="portfolio-description">Multifunkcni webova stranka.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">Demo</a>
+                                <a href="#" class="portfolio-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 3 -->
+                <div class="portfolio-card" data-category="ui">
+                    <div class="portfolio-image">
+                        <img src="./images/project3.jpg" alt="Dashboard UI" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">cyanOS</h3>
+                            <p class="portfolio-description">Muj vlastni operacni system (Debian-based).</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">C</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">Behance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 4 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="./images/project4.jpg" alt="Restaurant Web" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">cyarchOS</h3>
+                            <p class="portfolio-description">Druha verze cyanOS zalozena na Arch kernelu.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">C</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">Demo</a>
+                                <a href="#" class="portfolio-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 5 -->
+                <div class="portfolio-card" data-category="app">
+                    <div class="portfolio-image">
+                        <img src="./images/project5.jpg" alt="Todo App" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Ruzne aplikace pro cyanOS a cyarchOS</h3>
+                            <p class="portfolio-description">Par uzitecnych aplikaci, ktere pobezi na mych operacnich
+                                systemech.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">Demo</a>
+                                <a href="#" class="portfolio-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="/img/cozywp.jpg" alt="Projekt 1" loading="lazy">
+    <img src="/img/copenhagen.jpg" alt="Projekt 2" loading="lazy">
     <script src="script.js"></script>
+    <!-- Modal okno -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <div class="modal-body">
+                <img src="" alt="Project Detail" id="modal-image">
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <div id="modal-tags"></div>
+                    <div id="modal-links"></div>
+                </div>
+            </div>
+        </div>
+    </div>  
 </body>
 
 </html>
